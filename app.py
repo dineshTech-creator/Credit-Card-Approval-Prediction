@@ -186,5 +186,8 @@ def get_metrics():
         return jsonify({'error': f"Failed to load metrics: {str(e)}"}), 500
 
 if __name__ == '__main__':
-    # Default to port 5000, enable debug mode for development
-    app.run(host='127.0.0.1', port=5000, debug=True)
+    # On Render, PORT is injected as an env variable and must bind to 0.0.0.0
+    # Locally falls back to port 5000
+    port = int(os.environ.get('PORT', 5000))
+    debug = os.environ.get('RENDER') is None  # disable debug on Render
+    app.run(host='0.0.0.0', port=port, debug=debug)
