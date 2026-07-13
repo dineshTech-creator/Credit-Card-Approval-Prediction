@@ -1,0 +1,110 @@
+{
+    "comparison": {
+        "Logistic Regression": {
+            "Accuracy": 0.5864703431032088,
+            "Precision": 0.9864736592311343,
+            "Recall": 0.5873957891762046,
+            "F1 Score": 0.7363386768222479,
+            "ROC AUC": 0.5799582809238888
+        },
+        "Decision Tree": {
+            "Accuracy": 0.9538824836782887,
+            "Precision": 0.990973940893871,
+            "Recall": 0.9618482407799915,
+            "F1 Score": 0.9761938907213538,
+            "ROC AUC": 0.7309791358290653
+        },
+        "Random Forest": {
+            "Accuracy": 0.9606889845811918,
+            "Precision": 0.9908959537572254,
+            "Recall": 0.9689133813762894,
+            "F1 Score": 0.9797813817246552,
+            "ROC AUC": 0.7842294479692933
+        },
+        "Gradient Boosting": {
+            "Accuracy": 0.9829142936518961,
+            "Precision": 0.9833194328607172,
+            "Recall": 0.9995760915642221,
+            "F1 Score": 0.9913811225562329,
+            "ROC AUC": 0.6524541518704091
+        },
+        "XGBoost": {
+            "Accuracy": 0.9819419363800528,
+            "Precision": 0.9847871598046057,
+            "Recall": 0.9970326409495549,
+            "F1 Score": 0.9908720685297009,
+            "ROC AUC": 0.7326359692098857
+        },
+        "Balanced Random Forest": {
+            "Accuracy": 0.7652451729406862,
+            "Precision": 0.9921432486753152,
+            "Recall": 0.7672742687579482,
+            "F1 Score": 0.8653386454183267,
+            "ROC AUC": 0.7424385622323065
+        }
+    },
+    "best_model": {
+        "name": "Gradient Boosting",
+        "accuracy": 0.9829142936518961,
+        "precision": 0.9833194328607172,
+        "recall": 0.9995760915642221,
+        "f1_score": 0.9913811225562329,
+        "confusion_matrix": [
+            [
+                2,
+                120
+            ],
+            [
+                3,
+                7074
+            ]
+        ],
+        "classification_report": {
+            "0": {
+                "precision": 0.4,
+                "recall": 0.01639344262295082,
+                "f1-score": 0.031496062992125984,
+                "support": 122.0
+            },
+            "1": {
+                "precision": 0.9833194328607172,
+                "recall": 0.9995760915642221,
+                "f1-score": 0.9913811225562329,
+                "support": 7077.0
+            },
+            "accuracy": 0.9829142936518961,
+            "macro avg": {
+                "precision": 0.6916597164303586,
+                "recall": 0.5079847670935864,
+                "f1-score": 0.5114385927741795,
+                "support": 7199.0
+            },
+            "weighted avg": {
+                "precision": 0.9734340361654807,
+                "recall": 0.9829142936518961,
+                "f1-score": 0.9751141441888456,
+                "support": 7199.0
+            }
+        }
+    },
+    "feature_importances": {
+        "YEARS_EMPLOYED": 0.2924542684278281,
+        "AGE": 0.12154107522019303,
+        "AMT_INCOME_TOTAL": 0.11689961881460578,
+        "INCOME_PER_MEMBER": 0.11352075275373157,
+        "OCCUPATION_TYPE": 0.0708663621224533,
+        "CNT_CHILDREN": 0.0698523833272861,
+        "NAME_FAMILY_STATUS": 0.05944466513642054,
+        "NAME_INCOME_TYPE": 0.05745607307475946,
+        "NAME_HOUSING_TYPE": 0.019858643742098253,
+        "CODE_GENDER": 0.01976017729032403,
+        "CNT_FAM_MEMBERS": 0.015410203584340712,
+        "FLAG_OWN_CAR": 0.011923754993689837,
+        "NAME_EDUCATION_TYPE": 0.010340833181555478,
+        "INCOME_CAT": 0.009004489089037348,
+        "FLAG_OWN_REALTY": 0.006162047142375004,
+        "AGE_CAT": 0.0032272582185662218,
+        "UNEMPLOYED": 0.0022773938807352364,
+        "EMPLOYED_CAT": 0.0
+    }
+}

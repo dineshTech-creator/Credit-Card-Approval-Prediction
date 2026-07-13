@@ -1,0 +1,48 @@
+{
+    "class_counts": {
+        "1": 35386,
+        "0": 609
+    },
+    "gender_counts": {
+        "F": 24177,
+        "M": 11818
+    },
+    "education_counts": {
+        "Secondary / secondary special": 24622,
+        "Higher education": 9588,
+        "Incomplete higher": 1379,
+        "Lower secondary": 374,
+        "Academic degree": 32
+    },
+    "family_status_counts": {
+        "Married": 24720,
+        "Single / not married": 4762,
+        "Civil marriage": 2925,
+        "Separated": 2062,
+        "Widow": 1526
+    },
+    "housing_counts": {
+        "House / apartment": 32128,
+        "With parents": 1763,
+        "Municipal apartment": 1118,
+        "Rented apartment": 570,
+        "Office apartment": 255,
+        "Co-op apartment": 161
+    },
+    "income_cat_counts": {
+        "Medium": 17897,
+        "High": 13012,
+        "Low": 5086
+    },
+    "age_cat_counts": {
+        "Middle-Aged": 19435,
+        "Senior": 11629,
+        "Young": 4931
+    },
+    "employed_cat_counts": {
+        "Junior": 14066,
+        "Mid-level": 12494,
+        "Unemployed": 6117,
+        "Senior": 3318
+    }
+}
