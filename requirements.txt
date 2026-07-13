@@ -1,8 +1,9 @@
-# Runtime dependencies (used by Flask server on Render)
-flask>=2.0.0
-numpy>=1.20.0
-pandas>=1.3.0
-scikit-learn>=1.0.0
-xgboost>=1.5.0
-joblib>=1.0.0
-gunicorn>=20.1.0
+# Runtime dependencies — pinned to match training environment exactly
+# This prevents model unpickling errors due to library version mismatches
+flask==3.0.3
+numpy==1.26.4
+pandas==2.1.4
+scikit-learn==1.5.0
+xgboost==2.0.3
+joblib==1.5.3
+gunicorn==20.1.0
